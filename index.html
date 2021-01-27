@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Голландия</h1>
+            <h2>торговый центр</h2>
+        </div>
+        <nav>
+            <input id="btn-1" type="checkbox" />
+            <label for="btn-1">
+              <span class="hamburger">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+                <span class="cross"></span>
+              </span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides" role="listbox">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide_content">
+                                    <div class="slide_text">
+                                        <span class="slide_text_element">Пирожковая</span>
+                                        <span class="slide_text_element">Веселый Голландец</span>
+                                    </div>
+                                    <div class="slide_buttons">
+                                        <button class="btn">1 Этаж</button>
+                                        <button class="btn">Еда</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide_content">
+                                    <div class="slide_text">
+                                        <span class="slide_text_element">Пирожковая</span>
+                                        <span class="slide_text_element">Веселый Голландец</span>
+                                    </div>
+                                    <div class="slide_buttons">
+                                        <button class="btn">1 Этаж</button>
+                                        <button class="btn">Еда</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide_content">
+                                    <div class="slide_text">
+                                        <span class="slide_text_element">Пирожковая</span>
+                                        <span class="slide_text_element">Веселый Голландец</span>
+                                    </div>
+                                    <div class="slide_buttons">
+                                        <button class="btn">1 Этаж</button>
+                                        <button class="btn">Еда</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide_content">
+                                    <div class="slide_text">
+                                        <span class="slide_text_element">Пирожковая</span>
+                                        <span class="slide_text_element">Веселый Голландец</span>
+                                    </div>
+                                    <div class="slide_buttons">
+                                        <button class="btn">1 Этаж</button>
+                                        <button class="btn">Еда</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+        </section>
+        <section id="content">
+            <div class="ad_card">
+                <img src="img/ad1.png" alt="">
+                <div class="ad_card_text_box">
+                    <p class="ad_card_title">Баннеры на фасаде (по согласованию)</p>
+                    <p>Цена:<br>Статистика/охват</p>
+                </div>
+            </div>
+            <div class="ad_card">
+                <img src="img/ad22.png" alt="">
+                <div class="ad_card_text_box">
+                    <p class="ad_card_title">Панель-кронштейны на фасаде (3 шт.)</p>
+                    <p>Цена:<br>Статистика/охват</p>
+                </div>
+            </div>
+            <div class="ad_card">
+                <img src="img/ad22.png" alt="">
+                <div class="ad_card_text_box">
+                    <p class="ad_card_title">Панель-кронштейны на фасаде (3 шт.)</p>
+                    <p>Цена:<br>Статистика/охват</p>
+                </div>
+            </div>
+            <div class="ad_card">
+                <img src="img/ad22.png" alt="">
+                <div class="ad_card_text_box">
+                    <p class="ad_card_title">Панель-кронштейны на фасаде (3 шт.)</p>
+                    <p>Цена:<br>Статистика/охват</p>
+                </div>
+            </div>
+            <div class="form_wrapper">
+                <span class="form_title">Заявка на размещение<br>рекламы в тц голландия</span>
+                <form action="">
+                    <div>
+                        <label for="">Контактное лицо</label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <label>Телефон</label>
+                        <input name="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" value="+7"/>
+                    </div>
+                    <div class="confirmation_button">
+                        <input type="checkbox" id="first" name="interest" value="music" class="custom-checkbox" />
+                        <label for="first">Я ознакомлен и согласен с политикой<br>в отношении обработки персональных данных</label>
+                    </div>
+                    <div class="submit_button">
+                        <button>Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+            <div class="floor_content_box"></div>
+                <div class="holder">
+                    <input type="checkbox" class="show_more" id="show_more_rent" />
+                    <div class="limited">
+                        <img src="img/map1.png" alt="">
+                        <div class="limited_bottom"></div>
+                    </div>
+                    <label for="show_more_rent" class="show_more_button"></label>
+                </div>
+                <p style="margin-bottom: 3vh;"><span style="color: green;">&#9679;</span> –  Место свободно</p>
+                <span class="form_title">Заявка на аренду<br></span>
+                <form action="">
+                    <div>
+                        <label for="">Контактное лицо</label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <label for="">Телефон</label>
+                        <input name="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" value="+7"/>
+                    </div>
+                    <div class="rental_location">
+                        <div class="rental_location_elem">
+                            <label for="">Площадь</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="rental_location_elem">
+                            <label for="">Этаж</label>
+                            <select size=1>
+                                <OPTION selected value=1>Цокольный этаж</OPTION>
+                                <OPTION value=2>Первый этаж</OPTION>
+                                <OPTION value=3>Второй этаж</OPTION>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Планируемый ассортимент товара</label>
+                        <input type="text" />
+                    </div>
+                    <div class="confirmation_button">
+                        <input type="checkbox" id="second" class="custom-checkbox" />
+                        <label for="second">Я ознакомлен и согласен с политикой<br>в отношении обработки персональных данных</label>
+                    </div>
+                </form>
+            </div>
+            <div class="floor_content_box"></div>
+                <div class="holder">
+                    <input type="checkbox" class="show_more" id="show_more_shop" />
+                    <div class="limited">
+                        <img src="img/map2.png" alt="">
+                        <div class="limited_bottom"></div>
+                    </div>
+                    <label for="show_more_shop" class="show_more_button"></label>
+                </div>
+                <div class="floor_content">
+                    <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
+                    <ul>
+                        <li><b>Trendroom12,</b> женская одежда и обувь</li>
+                        <li><b>Major,</b> мужская одежда </li>
+                        <li><b>Boho,</b> женская одежда и обувь</li>
+                        <li><b>Moda Mix,</b> женская одежда и обувь</li>
+                        <li><b>Q'she1,</b> женская одежда и обувь</li>
+                        <li><b>Q'she2,</b> женская одежда и обувь</li>
+                        <li><b>Бродвей,</b> женская одежда и обувь</li>
+                        <li><b>ИП Кропотова А.А.,</b> женская одежда и обувь</li>
+                        <li><b>Шарм,</b> женская одежда и обувь</li>
+                        <li><b>TheROOM,</b> женская одежда и обувь</li>
+                        <li><b>Фифа,</b> женская одежда и обувь</li>
+                    </ul>
+                </div>
+                <div class="floor_content">
+                    <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
+                    <ul>
+                        <li><b>Пирожковая Весёлый Голландец</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_block">
+                <span class="content_block_title">Еда</span>
+                <img src="img/content1.png" alt="">
+                <span class="content_block_subtitle">Пирожковая Весёлый Голландец </span>
+                <p class="content_block_text">Описание</p>
+                <div class="info_buttons">
+                    <button class="info_btn" style="border-color: #fc7667;">Еда</button>
+                    <button class="info_btn">1 этаж</button>
+                </div>
+            </div>
+            <div class="content_block">
+                <span class="content_block_title">Развлечения</span>
+                <img src="img/content2.png" alt="">
+                <span class="content_block_subtitle">Квесты Fantasmia</span>
+                <p class="content_block_text">Описание</p>
+                <div class="info_buttons">
+                    <button class="info_btn" style="border-color: #b77cc3;">Развлечения</button>
+                    <button class="info_btn">1 этаж</button>
+                </div>
+            </div>
+            <div class="commercial_offers_content">
+                <div class="commercial_offers_elem">
+                    <p>Размещение рекламы<br>в ТЦ Голландия</p>
+                    <p>&#129122;</p>
+                </div>
+                <div class="commercial_offers_elem">
+                    <span>Аренда торговых<br>площадей</span>
+                    <p>&#129122;</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Голландия</h4>
+        <div class="footer_social">
+            <div class="contact_details">
+                <div class="contact_details_elem">
+                    <img src="img/pin.png" alt="pin">
+                    <p style="color: 162741;">г.Йошкар-Ола, ул.Красноармейская, д.43б<br>цокольный, 1-2 этаж</p>
+                </div>
+                <div class="contact_details_elem">
+                    <img src="img/phone.png" alt="phone">
+                    <p style="color: #0454c6;">8 (8362) 51-55-00</p>
+                </div>
+                <div class="contact_details_elem">
+                    <img src="img/mail.png" alt="mail">
+                    <p>ts.gollandiya@gmail.com</p>
+                </div>
+            </div>
+            <div class="social_links">
+                <p>Мы в соцсетях</p>
+                <div class="links">
+                    <div class="links_elem"><img src="img/inst.png" alt=""></div>
+                    <div class="links_elem"><img src="img/vk.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
