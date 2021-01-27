@@ -413,7 +413,7 @@ form input, select {
     border-radius: 15px;
     border: none;
     box-shadow: 0 8px 21px 3px #d6dce1;
-    height: 6vh;
+    height: 50px;
     margin-top: 5px;
     padding: 0 15px;
 }
