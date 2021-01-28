@@ -425,7 +425,7 @@ form input[type="checkbox"] {
 }
 
 .form_wrapper {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 form label {
@@ -547,12 +547,16 @@ form input, select {
 }
 
 .floor_content {
-    margin-top: 1vh;
+    margin: 20px 0;
 }
 
 .floor_content_title {
     border-radius: 62px;
     padding: 5px 10px;    
+}
+
+.floor_content ul {
+    margin-bottom: 30px;
 }
 
 .floor_content ul li {
@@ -561,6 +565,10 @@ form input, select {
 
 .floor_content ul li b {
     color: #000;
+}
+
+.info_box {
+    margin: 60px 0;
 }
 
 .opening_hours_title {
@@ -601,7 +609,7 @@ form input, select {
 }
 
 .content_block {
-    margin-bottom: 3vh;
+    margin-bottom: 30px;
 }
 
 .content_block_title {
@@ -610,7 +618,7 @@ form input, select {
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .content_block_subtitle {
