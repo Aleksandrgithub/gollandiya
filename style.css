@@ -615,15 +615,15 @@ form input, select {
 .location_box {
     margin: 10px 0 30px 0;
     background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 8px 21px 3px #d6dce1;
 }
 
 .location {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 0 8px 21px 3px #d6dce1;
     height: 50px;
 }
 
@@ -632,7 +632,6 @@ form input, select {
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: auto;
 }
 
 .content_block_title {
