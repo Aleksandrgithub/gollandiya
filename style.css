@@ -632,7 +632,7 @@ form input, select {
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    padding: 0 15px;
+    width: auto;
 }
 
 .content_block_title {
