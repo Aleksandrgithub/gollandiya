@@ -35,7 +35,7 @@
     </header>
     <main>
         <section>
-            <div class="swiper-container" style="height: 85vh;">
+            <div class="swiper-container swiper1" style="height: 85vh;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url(img/mainBg.png);">
                         <div class="slide_content">
@@ -92,12 +92,66 @@
         </section>
         <section id="content">
             <div class="content_block">
+                <span class="content_block_title">Шопинг</span>
                 <img src="img/boho2.png" alt="">
                 <span class="content_block_subtitle">Boho</span>
                 <p class="content_block_text">женская одежда </p>
                 <div class="info_buttons">
                     <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
                     <span class="info_btn">2 этаж</span>
+                </div>
+            </div>
+            <div class="content_block">
+                <span class="content_block_title">Еда</span>
+                <img src="img/content1.png" alt="">
+                <span class="content_block_subtitle">Пирожковая Весёлый Голландец </span>
+                <p class="content_block_text">Описание</p>
+                <div class="info_buttons">
+                    <span class="info_btn" style="border-color: #fc7667;">Еда</span>
+                    <span class="info_btn">1 этаж</span>
+                </div>
+            </div>
+            <div class="content_block">
+                <span class="content_block_title">Развлечения</span>
+                <img src="img/content2.png" alt="">
+                <span class="content_block_subtitle">Квесты Fantasmia</span>
+                <p class="content_block_text">Описание</p>
+                <div class="info_buttons">
+                    <span class="info_btn" style="border-color: #b77cc3;">Развлечения</span>
+                    <span class="info_btn">1 этаж</span>
+                </div>
+            </div>
+            <div class="floor_content_box">
+                <span class="content_block_title">Карта</span>
+                <div class="holder">
+                    <input type="checkbox" class="show_more" id="show_more_shop" />
+                    <div class="limited">
+                        <img src="img/map2.png" alt="">
+                        <div class="limited_bottom"></div>
+                    </div>
+                    <label for="show_more_shop" class="show_more_button"></label>
+                </div>
+                <div class="floor_content">
+                    <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
+                    <ul>
+                        <li><b>Trendroom12,</b> женская одежда и обувь</li>
+                        <li><b>Major,</b> мужская одежда </li>
+                        <li><b>Boho,</b> женская одежда и обувь</li>
+                        <li><b>Moda Mix,</b> женская одежда и обувь</li>
+                        <li><b>Q'she1,</b> женская одежда и обувь</li>
+                        <li><b>Q'she2,</b> женская одежда и обувь</li>
+                        <li><b>Бродвей,</b> женская одежда и обувь</li>
+                        <li><b>ИП Кропотова А.А.,</b> женская одежда и обувь</li>
+                        <li><b>Шарм,</b> женская одежда и обувь</li>
+                        <li><b>TheROOM,</b> женская одежда и обувь</li>
+                        <li><b>Фифа,</b> женская одежда и обувь</li>
+                    </ul>
+                </div>
+                <div class="floor_content">
+                    <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
+                    <ul>
+                        <li><b>Пирожковая Весёлый Голландец</b></li>
+                    </ul>
                 </div>
             </div>
             <div class="ad_place" id="ad">
@@ -154,6 +208,7 @@
                 </div>
             </div>
             <div class="floor_content_box" id="rent">
+                <span class="content_block_title">Аренда</span>
                 <div class="holder">
                     <input type="checkbox" class="show_more" id="show_more_rent" />
                     <div class="limited">
@@ -202,38 +257,6 @@
                     </div>
                 </form>
             </div>
-            <div class="floor_content_box"></div>
-            <div class="holder">
-                <input type="checkbox" class="show_more" id="show_more_shop" />
-                <div class="limited">
-                    <img src="img/map2.png" alt="">
-                    <div class="limited_bottom"></div>
-                </div>
-                <label for="show_more_shop" class="show_more_button"></label>
-            </div>
-            <div class="floor_content">
-                <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
-                <ul>
-                    <li><b>Trendroom12,</b> женская одежда и обувь</li>
-                    <li><b>Major,</b> мужская одежда </li>
-                    <li><b>Boho,</b> женская одежда и обувь</li>
-                    <li><b>Moda Mix,</b> женская одежда и обувь</li>
-                    <li><b>Q'she1,</b> женская одежда и обувь</li>
-                    <li><b>Q'she2,</b> женская одежда и обувь</li>
-                    <li><b>Бродвей,</b> женская одежда и обувь</li>
-                    <li><b>ИП Кропотова А.А.,</b> женская одежда и обувь</li>
-                    <li><b>Шарм,</b> женская одежда и обувь</li>
-                    <li><b>TheROOM,</b> женская одежда и обувь</li>
-                    <li><b>Фифа,</b> женская одежда и обувь</li>
-                </ul>
-            </div>
-            <div class="floor_content">
-                <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
-                <ul>
-                    <li><b>Пирожковая Весёлый Голландец</b></li>
-                </ul>
-            </div>
-            </div>
             <div class="info_box">
                 <div class="opening_hours">
                     <span class="opening_hours_title">Режим работы</span>
@@ -277,47 +300,33 @@
                         allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-            <div class="content_block">
-                <span class="content_block_title">Еда</span>
-                <img src="img/content1.png" alt="">
-                <span class="content_block_subtitle">Пирожковая Весёлый Голландец </span>
-                <p class="content_block_text">Описание</p>
-                <div class="info_buttons">
-                    <span class="info_btn" style="border-color: #fc7667;">Еда</span>
-                    <span class="info_btn">1 этаж</span>
-                </div>
-            </div>
-            <div class="content_block">
-                <span class="content_block_title">Развлечения</span>
-                <img src="img/content2.png" alt="">
-                <span class="content_block_subtitle">Квесты Fantasmia</span>
-                <p class="content_block_text">Описание</p>
-                <div class="info_buttons">
-                    <span class="info_btn" style="border-color: #b77cc3;">Развлечения</span>
-                    <span class="info_btn">1 этаж</span>
-                </div>
-            </div>
             <div class="commercial_offers_content">
                 <a href="#ad" class="commercial_offers_elem">
                     <p>Размещение рекламы<br>в ТЦ Голландия</p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-                        <g>
-                            <g id="keyboard-arrow-right">
-                                <polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   "/>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306"
+                            style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                            <g>
+                                <g id="keyboard-arrow-right">
+                                    <polygon
+                                        points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   " />
+                                </g>
                             </g>
-                        </g>
-                       </svg>
+                        </svg>
                     </p>
                 </a>
                 <a href="#rent" class="commercial_offers_elem">
                     <span>Аренда торговых<br>площадей</span>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
-                        <g>
-                            <g id="keyboard-arrow-right">
-                                <polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   "/>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306"
+                            style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                            <g>
+                                <g id="keyboard-arrow-right">
+                                    <polygon
+                                        points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   " />
+                                </g>
                             </g>
-                        </g>
-                       </svg>
+                        </svg>
                     </p>
                 </a>
             </div>
@@ -349,6 +358,7 @@
             </div>
         </div>
     </footer>
+    <img src="img/footerDown.png" alt="" class="footer_down">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
