@@ -244,107 +244,35 @@ nav input[type="checkbox"] {
     transition-delay: 1.1s;
 }
 
-#slider {
-    margin: 0 auto;
+.swiper-container {
     max-width: 500px;
-    height: 85vh;
+    height: 100%;
+}
+
+.swiper-slide {
     text-align: center;
-}
-
-#slider input[type=radio] {
-    display: none;
-}
-
-#slider label {
-    cursor:pointer;
-    text-decoration: none;
-}
-
-#slides {
+    font-size: 18px;
     background: #fff;
-    position: relative;
-    z-index: 1;
-    width: 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
-#overflow {
-	width: 100%;
-	overflow: hidden;
-}
-
-#slide1:checked ~ #slides .inner {
-    margin-left: 0;
-}
-
-#slide2:checked ~ #slides .inner {
-    margin-left: -100%;
-}
-
- #slide3:checked ~ #slides .inner {
-    margin-left: -200%;
-}
-
-#slide4:checked ~ #slides .inner {
-    margin-left: -300%;
-}
-#slides .inner {
-    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    width: 400%;
-    height: 85vh;
-}
-
- #slides .slide {
-	width: 25%;
-	float:left;
-	display: flex;
-	align-items: flex-end;
-	height: 100%;
-	color: #fff;
-	background-size: cover;
-	background-position: center;
-}
- 
-#slides .slide_1 {
-	background-image: url(img/mainBg.png);
-}
-
-#slides .slide_2 {
-	background-image: url(img/mainBg2.png);
-}
-
-#slides .slide_3 {
-	background-image: url(img/mainBg3.png);
-}
-
-#slides .slide_4 {
-	background-image: url(img/mainBg4.png);
-}
-
- #controls label:hover {
-    opacity: 1;
-}
- 
-#bullets {
-	text-align: right;
-	z-index: 50;
-}
-
-#bullets label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #444;
-    margin: 0 5px;
-    z-index: 10;
-}
-
-#slide1:checked ~ #bullets label:nth-child(1),
-#slide2:checked ~ #bullets label:nth-child(2),
-#slide3:checked ~ #bullets label:nth-child(3),
-#slide4:checked ~ #bullets label:nth-child(4) {
-	background-color: #000;
-	opacity: 0.4;
+.swiper-slide {
+    background-size: cover; 
+    background-position: center; 
+    align-items: flex-end;
 }
 
 .slide_text {
@@ -359,8 +287,7 @@ nav input[type="checkbox"] {
 }
 
 .slide_content {
-	margin-bottom: 35px;
-	margin-left: 30px;
+    margin-bottom: 4vh;
 }
 
 .slide_text_element {
@@ -651,7 +578,7 @@ form input, select {
 }
 
 .opening_hours_text {
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
 }
 
 .map_card {
@@ -661,7 +588,8 @@ form input, select {
 }
 
 .map_card .footer_social {
-    padding: 10px;
+    padding: 20px 10px;
+    font-size: 0.5rem;
 }
 
 .content_block {

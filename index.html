@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -19,85 +24,82 @@
         <nav>
             <input id="btn-1" type="checkbox" />
             <label for="btn-1">
-              <span class="hamburger">
-                <span class="line-1"></span>
-                <span class="line-2"></span>
-                <span class="line-3"></span>
-                <span class="cross"></span>
-              </span>
+                <span class="hamburger">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                    <span class="cross"></span>
+                </span>
             </label>
         </nav>
     </header>
     <main>
         <section>
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                <div id="slides" role="listbox">
-                    <div id="overflow">
-                        <div class="inner">
-                            <div class="slide slide_1">
-                                <div class="slide_content">
-                                    <div class="slide_text">
-                                        <span class="slide_text_element">Пирожковая</span>
-                                        <span class="slide_text_element">Веселый Голландец</span>
-                                    </div>
-                                    <div class="slide_buttons">
-                                        <div class="btn">1 Этаж</div>
-                                        <div class="btn">Еда</div>
-                                    </div>
-                                </div>
+            <div class="swiper-container" style="height: 85vh;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(img/mainBg.png);">
+                        <div class="slide_content">
+                            <div class="slide_text">
+                                <span class="slide_text_element">Пирожковая</span>
+                                <span class="slide_text_element">Веселый Голландец</span>
                             </div>
-                            <div class="slide slide_2">
-                                <div class="slide_content">
-                                    <div class="slide_text">
-                                        <span class="slide_text_element">Пирожковая</span>
-                                        <span class="slide_text_element">Веселый Голландец</span>
-                                    </div>
-                                    <div class="slide_buttons">
-                                        <div class="btn">1 Этаж</div>
-                                        <div class="btn">Еда</div>
-                                    </div>
-                                </div>
+                            <div class="slide_buttons">
+                                <button class="btn">1 Этаж</button>
+                                <button class="btn">Еда</button>
                             </div>
-                            <div class="slide slide_3">
-                                <div class="slide_content">
-                                    <div class="slide_text">
-                                        <span class="slide_text_element">Пирожковая</span>
-                                        <span class="slide_text_element">Веселый Голландец</span>
-                                    </div>
-                                    <div class="slide_buttons">
-                                        <div class="btn">1 Этаж</div>
-                                        <div class="btn">Еда</div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(img/mainBg2.png);">
+                        <div class="slide_content">
+                            <div class="slide_text">
+                                <span class="slide_text_element">Пирожковая</span>
+                                <span class="slide_text_element">Веселый Голландец</span>
                             </div>
-                            <div class="slide slide_4">
-                                <div class="slide_content">
-                                    <div class="slide_text">
-                                        <span class="slide_text_element">Пирожковая</span>
-                                        <span class="slide_text_element">Веселый Голландец</span>
-                                    </div>
-                                    <div class="slide_buttons">
-                                        <div class="btn">1 Этаж</div>
-                                        <div class="btn">Еда</div>
-                                    </div>
-                                </div>
+                            <div class="slide_buttons">
+                                <button class="btn">1 Этаж</button>
+                                <button class="btn">Еда</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(img/mainBg3.png);">
+                        <div class="slide_content">
+                            <div class="slide_text">
+                                <span class="slide_text_element">Пирожковая</span>
+                                <span class="slide_text_element">Веселый Голландец</span>
+                            </div>
+                            <div class="slide_buttons">
+                                <button class="btn">1 Этаж</button>
+                                <button class="btn">Еда</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(img/mainBg4.png);">
+                        <div class="slide_content">
+                            <div class="slide_text">
+                                <span class="slide_text_element">Пирожковая</span>
+                                <span class="slide_text_element">Веселый Голландец</span>
+                            </div>
+                            <div class="slide_buttons">
+                                <button class="btn">1 Этаж</button>
+                                <button class="btn">Еда</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section id="content">
+            <div class="content_block">
+                <img src="img/boho2.png" alt="">
+                <span class="content_block_subtitle">Boho</span>
+                <p class="content_block_text">женская одежда </p>
+                <div class="info_buttons">
+                    <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                    <span class="info_btn">2 этаж</span>
+                </div>
+            </div>
             <div class="ad_place" id="ad">
                 <span class="content_block_title">Реклама</span>
                 <div class="ad_card">
@@ -137,11 +139,13 @@
                         </div>
                         <div>
                             <label>Телефон</label>
-                            <input name="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" value="+7"/>
+                            <input name="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                                value="+7" />
                         </div>
                         <div class="confirmation_button">
                             <input type="checkbox" id="first" name="interest" value="music" class="custom-checkbox" />
-                            <label for="first">Я ознакомлен и согласен с политикой<br>в отношении обработки персональных данных</label>
+                            <label for="first">Я ознакомлен и согласен с политикой<br>в отношении обработки персональных
+                                данных</label>
                         </div>
                         <div class="submit_button">
                             <button>Отправить заявку</button>
@@ -158,7 +162,7 @@
                     </div>
                     <label for="show_more_rent" class="show_more_button"></label>
                 </div>
-                <p style="margin-bottom: 3vh;"><span style="color: green;">&#9679;</span> –  Место свободно</p>
+                <p style="margin-bottom: 3vh;"><span style="color: green;">&#9679;</span> – Место свободно</p>
                 <span class="form_title">Заявка на аренду<br></span>
                 <form action="">
                     <div>
@@ -167,12 +171,13 @@
                     </div>
                     <div>
                         <label for="">Телефон</label>
-                        <input name="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" value="+7"/>
+                        <input name="tel" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                            value="+7" />
                     </div>
                     <div class="rental_location">
                         <div class="rental_location_elem">
                             <label for="">Площадь</label>
-                            <input type="text"/>
+                            <input type="text" />
                         </div>
                         <div class="rental_location_elem">
                             <label for="">Этаж</label>
@@ -189,7 +194,8 @@
                     </div>
                     <div class="confirmation_button">
                         <input type="checkbox" id="second" class="custom-checkbox" />
-                        <label for="second">Я ознакомлен и согласен с политикой<br>в отношении обработки персональных данных</label>
+                        <label for="second">Я ознакомлен и согласен с политикой<br>в отношении обработки персональных
+                            данных</label>
                     </div>
                     <div class="submit_button">
                         <button>Отправить заявку</button>
@@ -197,36 +203,36 @@
                 </form>
             </div>
             <div class="floor_content_box"></div>
-                <div class="holder">
-                    <input type="checkbox" class="show_more" id="show_more_shop" />
-                    <div class="limited">
-                        <img src="img/map2.png" alt="">
-                        <div class="limited_bottom"></div>
-                    </div>
-                    <label for="show_more_shop" class="show_more_button"></label>
+            <div class="holder">
+                <input type="checkbox" class="show_more" id="show_more_shop" />
+                <div class="limited">
+                    <img src="img/map2.png" alt="">
+                    <div class="limited_bottom"></div>
                 </div>
-                <div class="floor_content">
-                    <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
-                    <ul>
-                        <li><b>Trendroom12,</b> женская одежда и обувь</li>
-                        <li><b>Major,</b> мужская одежда </li>
-                        <li><b>Boho,</b> женская одежда и обувь</li>
-                        <li><b>Moda Mix,</b> женская одежда и обувь</li>
-                        <li><b>Q'she1,</b> женская одежда и обувь</li>
-                        <li><b>Q'she2,</b> женская одежда и обувь</li>
-                        <li><b>Бродвей,</b> женская одежда и обувь</li>
-                        <li><b>ИП Кропотова А.А.,</b> женская одежда и обувь</li>
-                        <li><b>Шарм,</b> женская одежда и обувь</li>
-                        <li><b>TheROOM,</b> женская одежда и обувь</li>
-                        <li><b>Фифа,</b> женская одежда и обувь</li>
-                    </ul>
-                </div>
-                <div class="floor_content">
-                    <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
-                    <ul>
-                        <li><b>Пирожковая Весёлый Голландец</b></li>
-                    </ul>
-                </div>
+                <label for="show_more_shop" class="show_more_button"></label>
+            </div>
+            <div class="floor_content">
+                <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
+                <ul>
+                    <li><b>Trendroom12,</b> женская одежда и обувь</li>
+                    <li><b>Major,</b> мужская одежда </li>
+                    <li><b>Boho,</b> женская одежда и обувь</li>
+                    <li><b>Moda Mix,</b> женская одежда и обувь</li>
+                    <li><b>Q'she1,</b> женская одежда и обувь</li>
+                    <li><b>Q'she2,</b> женская одежда и обувь</li>
+                    <li><b>Бродвей,</b> женская одежда и обувь</li>
+                    <li><b>ИП Кропотова А.А.,</b> женская одежда и обувь</li>
+                    <li><b>Шарм,</b> женская одежда и обувь</li>
+                    <li><b>TheROOM,</b> женская одежда и обувь</li>
+                    <li><b>Фифа,</b> женская одежда и обувь</li>
+                </ul>
+            </div>
+            <div class="floor_content">
+                <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
+                <ul>
+                    <li><b>Пирожковая Весёлый Голландец</b></li>
+                </ul>
+            </div>
             </div>
             <div class="info_box">
                 <div class="opening_hours">
@@ -245,7 +251,8 @@
                         <div class="contact_details">
                             <div class="contact_details_elem">
                                 <img src="img/pin.png" alt="pin">
-                                <p style="color: 162741;">г.Йошкар-Ола, ул.Красноармейская, д.43б<br>цокольный, 1-2 этаж</p>
+                                <p style="color: 162741;">г.Йошкар-Ола, ул.Красноармейская, д.43б<br>цокольный, 1-2 этаж
+                                </p>
                             </div>
                             <div class="contact_details_elem">
                                 <img src="img/phone.png" alt="phone">
@@ -264,7 +271,10 @@
                             </div>
                         </div>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.2701169235152!2d47.89437615526382!3d56.64044347827645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4159eb2ee63631d1%3A0x45306c2e70803dca!2z0YPQuy4g0JrRgNCw0YHQvdC-0LDRgNC80LXQudGB0LrQsNGPLCA0M9CxLCDQmdC-0YjQutCw0YAt0J7Qu9CwLCDQoNC10YHQvy4g0JzQsNGA0LjQuSDQrdC7LCA0MjQwMDI!5e0!3m2!1sru!2sru!4v1611816098363!5m2!1sru!2sru" style="height: 30vh; padding-top: 2vh; width: 100%; border-radius: 20px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.2701169235152!2d47.89437615526382!3d56.64044347827645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4159eb2ee63631d1%3A0x45306c2e70803dca!2z0YPQuy4g0JrRgNCw0YHQvdC-0LDRgNC80LXQudGB0LrQsNGPLCA0M9CxLCDQmdC-0YjQutCw0YAt0J7Qu9CwLCDQoNC10YHQvy4g0JzQsNGA0LjQuSDQrdC7LCA0MjQwMDI!5e0!3m2!1sru!2sru!4v1611816098363!5m2!1sru!2sru"
+                        style="height: 30vh; width: 100%; border-radius: 20px;" frameborder="0" style="border:0;"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
             <div class="content_block">
@@ -325,6 +335,9 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
