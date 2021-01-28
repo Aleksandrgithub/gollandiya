@@ -660,8 +660,8 @@ form input, select {
     box-shadow: 0 8px 24px 3px rgba(214, 220, 225, 0.53);
 }
 
-.footer_social {
-    padding: 20px;
+.map_card .footer_social {
+    padding: 10px;
 }
 
 .content_block {
