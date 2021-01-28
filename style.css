@@ -571,6 +571,10 @@ form input, select {
     text-transform: uppercase;
 }
 
+.opening_hours_text_box {
+    margin-bottom: 15px;
+}
+
 .opening_hours_text p {
     font-size: 16px;
 }
