@@ -518,11 +518,11 @@ form input, select {
 }
 
 .show_more ~ .show_more_button:before {
-    content: "Развернуть \02C5";
+    content: "Развернуть";
 }
 
 .show_more:checked ~ .show_more_button:before {
-    content: "Свернуть \02C4";
+    content: "Свернуть";
 }
 
 .show_more_button {
