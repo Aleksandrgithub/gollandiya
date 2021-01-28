@@ -277,9 +277,11 @@ button.swiper-pagination-bullet {
   -moz-appearance: none;
   appearance: none;
 }
+
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
 }
+
 .swiper-pagination-bullet-active {
   opacity: 1;
   border: 0px solid rgba(255, 255, 255, .1);
@@ -289,6 +291,7 @@ button.swiper-pagination-bullet {
   height: 8px;
   background: var(--swiper-pagination-color, var(--swiper-theme-color));
 }
+
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;
   top: 50%;
