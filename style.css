@@ -688,7 +688,7 @@ form input, select {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     outline: none;
-    padding: 0 15px;
+    padding: 0 8px;
 }
 
 .info_btn:first-child {
