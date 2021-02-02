@@ -244,6 +244,61 @@ nav input[type="checkbox"] {
     transition-delay: 1.1s;
 }
 
+.menu_box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    max-width: 500px;
+}
+
+/* элементы меню */
+.menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+}
+
+.menu_item:hover {
+    background-color: #76008f;
+    color: #ffffff;
+}
+
+#btn-1:checked ~ .menu_box {
+    visibility: visible;
+    left: 0;
+    z-index: 2;
+    margin-top: 15vh;
+}
+
+.menu_content {
+    height: 45vh;
+    text-align: right;
+}
+
+.under_content {
+    background-color: #f8f8f8;
+    padding: 40px 20px 10px 20px;
+    height: 40vh;
+}
+
+.under_content .opening_hours {
+    text-align: right;
+}
+
 .swiper1 {
     max-width: 500px;
     height: 100%;
