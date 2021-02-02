@@ -254,22 +254,33 @@ nav input[type="checkbox"] {
     height: 100%;
     margin: 0;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     max-width: 500px;
 }
 
 /* элементы меню */
 .menu_item {
-    display: block;
-    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 20px;
     color: #333;
     font-family: "Roboto";
-    font-size: 24px;
+    font-size: 100%;
     font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_content li {
+    height: calc(100% / 6);
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .menu_item:hover {
@@ -285,18 +296,33 @@ nav input[type="checkbox"] {
 }
 
 .menu_content {
-    height: 45vh;
     text-align: right;
+    background-color: #fff;
+    height: 45vh;
 }
 
 .under_content {
-    background-color: #f8f8f8;
-    padding: 40px 20px 10px 20px;
     height: 40vh;
+    padding: 40px 20px 5% 20px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .under_content .opening_hours {
     text-align: right;
+}
+
+.under_content .social_links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.under_content .links {
+    margin-top: 0px;
+}
+
+.contact_details_elem:last-child {
+    padding-bottom: 0px;
 }
 
 .swiper1 {
