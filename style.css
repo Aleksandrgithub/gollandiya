@@ -325,6 +325,10 @@ nav input[type="checkbox"] {
     padding-bottom: 0px;
 }
 
+.info_box .opening_hours {
+    padding-bottom: 15px;
+}
+
 .swiper1 {
     max-width: 500px;
     height: 100%;
@@ -648,10 +652,6 @@ form input, select {
     width: auto;
 }
 
-.floor_content_box {
-    margin: 30px 0;
-}
-
 .floor_content {
     margin: 20px 0;
 }
@@ -671,10 +671,6 @@ form input, select {
 
 .floor_content ul li b {
     color: #000;
-}
-
-.info_box {
-    margin: 60px 0;
 }
 
 .opening_hours_title {
@@ -703,6 +699,11 @@ form input, select {
     padding-bottom: 1vh;
 }
 
+.opening_hours_text:last-child {
+    padding-bottom: 0px;
+}
+
+
 .map_card {
     background-color: #fff;
     border-radius: 20px;
@@ -719,7 +720,7 @@ form input, select {
 }
 
 .location_box {
-    margin: 10px 0 30px 0;
+    margin: 0px 0 30px 0;
     background-color: #fff;
     border-radius: 30px;
     border: none;
@@ -738,6 +739,11 @@ form input, select {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+}
+
+.location li a {
+    text-decoration: none;
+    color: black;
 }
 
 .content_block_title {
