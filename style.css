@@ -715,6 +715,13 @@ form input, select {
     font-size: 0.5rem;
 }
 
+.swiper1_slide {
+    padding: 0 30px;
+    -webkit-justify-content: end;
+    justify-content: end;
+    -webkit-box-align: end;
+}
+
 .content_block {
     margin-bottom: 30px;
 }
