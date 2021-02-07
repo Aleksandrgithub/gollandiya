@@ -145,6 +145,10 @@ nav input[type="checkbox"] {
     display: none;
 }
 
+.fix_scroll {
+    position: fixed;
+}
+
 .hamburger {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
