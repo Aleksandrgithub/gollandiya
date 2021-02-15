@@ -389,6 +389,11 @@ nav input[type="checkbox"] {
     align-items: center;
 }
 
+.swiper_image {
+    width: 26vh;
+    height: 19.5vh;
+}
+
 .slide_text {
 	display: flex;
 	align-items: flex-start;
