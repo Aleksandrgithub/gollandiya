@@ -820,6 +820,22 @@ form input, select {
     margin-bottom: 2vh;
 }
 
+.back-to-top, .back-to-main
+{
+    position: fixed;
+    right: 30px;
+    bottom: 64px;
+    width: 35px;
+    height: 35px;
+    background-color: #0378db;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.back-to-main {
+    right: 75px;
+}
+
 footer {
     max-width: 500px;
     width: 100%;
