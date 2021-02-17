@@ -141,112 +141,517 @@
             <div class="content_block">
                 <div class="location_box" style="background-color: #f8f8f8; box-shadow: none;">
                     <ul class="location">
-                        <li style="width: 30%; border-radius: 30px; border: 3px solid #fcd003;"><a href="shopping.html">Шопинг</a></li>
-                        <li style="width: 20%; border-radius: 30px; border: 3px solid #ff1b00;"><a href="food.html">Еда</a></li>
-                        <li style="width: 43%; border-radius: 30px; border: 3px solid #76008f;"><a href="entertainment.html">Развлечения</a></li>
+                        <li style="width: 30%; border-radius: 30px; border: 3px solid #fcd003;"><a id="shopping_collection" >Шопинг</a></li>
+                        <li style="width: 20%; border-radius: 30px; border: 3px solid #ff1b00;"><a id="food_collection" >Еда</a></li>
+                        <li style="width: 43%; border-radius: 30px; border: 3px solid #76008f;"><a id="entertainment_collection">Развлечения</a></li>
                     </ul>
                 </div>
                 <div class="location_box">
                     <ul class="location">
-                        <li style="width: 25%; border-radius: 30px; border: 3px solid #e4e8ec; background-color: #fff; ">1 Этаж</li>
-                        <li style="width: 25%;">2 Этаж</li>
-                        <li style="width: 50%">Цокольный этаж</li>
+                        <li style="width: 25%;" id="first_floor_curr" class="floor_curr" ><a id="first_floor_button">1 Этаж</a></li>
+                        <li style="width: 25%;" id="second_floor_curr"><a id="second_floor_button">2 Этаж</a></li>
+                        <li style="width: 50%" id="ground_floor_curr"><a id="ground_floor_button">Цокольный этаж</a></li>
                     </ul>
                 </div>
-                <span class="content_block_title">Шопинг</span>
-                <div class="store_collection">
-                    <div class="swiper-container swiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper2_slide">
-                                <div>
-                                    <img src="img/bohoslide1.png" alt="" class="swiper_image">
-                                    <span class="content_block_subtitle" style="font-size: 95%;">Trendroom12</span>
-                                    <p class="content_block_text" style="font-size: 80%;">женская одежда</p>
-                                    <div class="info_buttons">
-                                        <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
-                                        <span class="info_btn">2 этаж</span>
+                <div class="shopping_collection">
+                    <div class="first_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper2_slide">
-                                <div>
-                                    <img src="img/bohoslide2.png" alt="" class="swiper_image">
-                                    <span class="content_block_subtitle" style="font-size: 95%;">Boho</span>
-                                    <p class="content_block_text" style="font-size: 80%;">женская одежда</p>
-                                    <div class="info_buttons">
-                                        <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
-                                        <span class="info_btn">2 этаж</span>
+                            <span class="content_block_subtitle">Trendroom12</span>
+                            <p class="content_block_text">женская одежда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                                <span class="info_btn">1 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper2_slide">
-                                <div>
-                                    <img src="img/bohoslide1.png" alt="" class="swiper_image">
-                                    <span class="content_block_subtitle" style="font-size: 95%;">Trendroom12</span>
-                                    <p class="content_block_text" style="font-size: 80%;">женская одежда</p>
-                                    <div class="info_buttons">
-                                        <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
-                                        <span class="info_btn">2 этаж</span>
+                            <span class="content_block_subtitle">Boho</span>
+                            <p class="content_block_text">женская одежда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                                <span class="info_btn">1 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/boho2.png" alt="">
+                        <span class="content_block_subtitle">Boho</span>
+                        <p class="content_block_text">женская одежда </p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                            <span class="info_btn">1 этаж</span>
+                        </div>
+                    </div>
+                    <div class="second_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
                                     </div>
                                 </div>
                             </div>
+                            <span class="content_block_subtitle">Trendroom12</span>
+                            <p class="content_block_text">женская одежда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Boho</span>
+                            <p class="content_block_text">женская одежда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/boho2.png" alt="">
+                        <span class="content_block_subtitle">Boho</span>
+                        <p class="content_block_text">женская одежда </p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
+                    <div class="ground_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Trendroom12</span>
+                            <p class="content_block_text">женская одежда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                                <span class="info_btn">цокольный этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide">
+                                        <img src="img/bohoslide2.png" alt="" class="swiper_image">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Boho</span>
+                            <p class="content_block_text">женская одежда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                                <span class="info_btn">цокольный этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/boho2.png" alt="">
+                        <span class="content_block_subtitle">Boho</span>
+                        <p class="content_block_text">женская одежда </p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                            <span class="info_btn">цокольный этаж</span>
                         </div>
                     </div>
                 </div>
-            <div class="content_block">
-                <span class="content_block_title">Еда</span>
-                <img src="img/content1.png" alt="">
-                <span class="content_block_subtitle">Пирожковая Весёлый Голландец </span>
-                <p class="content_block_text">Описание</p>
-                <div class="info_buttons">
-                    <span class="info_btn" style="border-color: #fc7667;">Еда</span>
-                    <span class="info_btn">1 этаж</span>
+                <div class="food_collection is-not-showing">
+                    <div class="first_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper" style="height: 19.5vh;">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Еда1</span>
+                            <p class="content_block_text">еда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2" style="height: 19.5vh;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Еда2</span>
+                            <p class="content_block_text">еда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/content1.png" alt="">
+                        <span class="content_block_subtitle">Еда3</span>
+                        <p class="content_block_text">еда</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
+                    <div class="second_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper" style="height: 19.5vh;">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Еда1</span>
+                            <p class="content_block_text">еда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2" style="height: 19.5vh;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Еда2</span>
+                            <p class="content_block_text">еда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/content1.png" alt="">
+                        <span class="content_block_subtitle">Еда3</span>
+                        <p class="content_block_text">еда</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
+                    <div class="ground_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper" style="height: 19.5vh;">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Еда1</span>
+                            <p class="content_block_text">еда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2" style="height: 19.5vh;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Еда2</span>
+                            <p class="content_block_text">еда</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/content1.png" alt="">
+                        <span class="content_block_subtitle">Еда3</span>
+                        <p class="content_block_text">еда</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="content_block">
-                <span class="content_block_title">Развлечения</span>
-                <img src="img/content2.png" alt="">
-                <span class="content_block_subtitle">Квесты Fantasmia</span>
-                <p class="content_block_text">Описание</p>
-                <div class="info_buttons">
-                    <span class="info_btn" style="border-color: #b77cc3;">Развлечения</span>
-                    <span class="info_btn">1 этаж</span>
+                <div class="entertainment_collection is-not-showing">
+                    <div class="first_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper" style="height: 19.5vh;">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Развлечения1</span>
+                            <p class="content_block_text">развлечения</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2" style="height: 19.5vh;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Развлечения2</span>
+                            <p class="content_block_text">развлечения</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/content2.png" alt="">
+                        <span class="content_block_subtitle">Развлечения3</span>
+                        <p class="content_block_text">развлечения</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
+                    <div class="second_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper" style="height: 19.5vh;">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Развлечения1</span>
+                            <p class="content_block_text">развлечения</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2" style="height: 19.5vh;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Развлечения2</span>
+                            <p class="content_block_text">развлечения</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/content2.png" alt="">
+                        <span class="content_block_subtitle">Развлечения3</span>
+                        <p class="content_block_text">развлечения</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
+                    <div class="ground_floor">
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2">
+                                <div class="swiper-wrapper" style="height: 19.5vh;">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Развлечения1</span>
+                            <p class="content_block_text">развлечения</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <div class="store_collection">
+                            <div class="swiper-container swiper2" style="height: 19.5vh;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper2_slide" style="background-color: yellow;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: red;">
+                                        
+                                    </div>
+                                    <div class="swiper-slide swiper2_slide" style="background-color: black;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="content_block_subtitle">Развлечения2</span>
+                            <p class="content_block_text">развлечения</p>
+                            <div class="info_buttons">
+                                <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                                <span class="info_btn">2 этаж</span>
+                            </div>
+                        </div>
+                        <img src="img/content2.png" alt="">
+                        <span class="content_block_subtitle">Развлечения3</span>
+                        <p class="content_block_text">развлечения</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                            <span class="info_btn">2 этаж</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="commercial_offers_content">
-                <a href="#ad" class="commercial_offers_elem">
-                    <p>Размещение рекламы<br>в ТЦ Голландия</p>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                            id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306"
-                            style="enable-background:new 0 0 306 306;" xml:space="preserve">
-                            <g>
-                                <g id="keyboard-arrow-right">
-                                    <polygon
-                                        points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   " />
+                <div class="commercial_offers_content">
+                    <a href="#ad" class="commercial_offers_elem">
+                        <p>Размещение рекламы<br>в ТЦ Голландия</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306"
+                                style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                <g>
+                                    <g id="keyboard-arrow-right">
+                                        <polygon
+                                            points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   " />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
-                    </p>
-                </a>
-                <a href="#rent" class="commercial_offers_elem">
-                    <span>Аренда торговых<br>площадей</span>
-                    <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                            id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306"
-                            style="enable-background:new 0 0 306 306;" xml:space="preserve">
-                            <g>
-                                <g id="keyboard-arrow-right">
-                                    <polygon
-                                        points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   " />
+                            </svg>
+                        </p>
+                    </a>
+                    <a href="#rent" class="commercial_offers_elem">
+                        <span>Аренда торговых<br>площадей</span>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                id="Capa_1" x="0px" y="0px" width="12px" fill="#0378db" height="12px" viewBox="0 0 306 306"
+                                style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                                <g>
+                                    <g id="keyboard-arrow-right">
+                                        <polygon
+                                            points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306   " />
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
-                    </p>
-                </a>
-            </div>
+                            </svg>
+                        </p>
+                    </a>
+                </div>
         </section>
     </main>
-    <a href="#" class="back-to-top"></a>
-    <a href="#" class="back-to-main"></a>
+    <!-- <a href="#" class="back-to-top"></a>
+    <a href="#" class="back-to-main"></a> -->
     <footer>
         <h4>Голландия</h4>
         <div class="footer_social">
