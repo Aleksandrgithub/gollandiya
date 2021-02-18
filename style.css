@@ -757,11 +757,6 @@ form input, select {
     height: 100%;
 }
 
-.location li a {
-    text-decoration: none;
-    color: black;
-}
-
 .content_block_title {
     display: inline-block;
     font-size: 30px;
@@ -852,21 +847,32 @@ form input, select {
     display: none;
 }
 
-.shop_curr {
-    background-color: #fcd003;
-    display: block;
+.floor_curr {
+    border-radius: 30px; border: 3px solid #e4e8ec; background-color: #fff;
 }
 
-.food_curr {
+.location_li_shop {
+    background-color: #fcd003;
+}
+
+.shopping_collection_a {
+    color:#fff;
+}
+
+.location_li_food {
     background-color: #ff1b00;
 }
 
-.entertainment_curr {
+.food_collection_a {
+    color:#fff;
+}
+
+.location_li_entrtnmnt {
     background-color: #76008f;
 }
 
-.floor_curr {
-    border-radius: 30px; border: 3px solid #e4e8ec; background-color: #fff;
+.entertainment_collection_a {
+    color:#fff;
 }
 
 

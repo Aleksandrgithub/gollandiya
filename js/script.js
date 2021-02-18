@@ -25,20 +25,40 @@ document.querySelector('#btn-1').addEventListener('change', () => {
 // backToTop();
 
 document.querySelector('#shopping_collection').addEventListener('click', () => {
-  document.querySelector('.shopping_collection').classList.remove('is-not-showing') + document.querySelector('.food_collection').classList.add('is-not-showing') +
-  document.querySelector('.entertainment_collection').classList.add('is-not-showing')
+  document.querySelector('.shopping_collection').classList.remove('is-not-showing') + 
+  document.querySelector('.food_collection').classList.add('is-not-showing') +
+  document.querySelector('.entertainment_collection').classList.add('is-not-showing') +
+  document.querySelector('#location_li_shop').classList.add('location_li_shop') + 
+  document.querySelector('#shopping_collection').classList.add('shopping_collection_a') +
+  document.querySelector('#location_li_food').classList.remove('location_li_food') + 
+  document.querySelector('#food_collection').classList.remove('food_collection_a') +
+  document.querySelector('#location_li_entrtnmnt').classList.remove('location_li_entrtnmnt') + 
+  document.querySelector('#entertainment_collection').classList.remove('entertainment_collection_a')
 });
 
 document.querySelector('#food_collection').addEventListener('click', () => {
-  document.querySelector('.food_collection').classList.remove('is-not-showing') + document.querySelector('.shopping_collection').classList.add('is-not-showing') +
-  document.querySelector('.entertainment_collection').classList.add('is-not-showing') 
+  document.querySelector('.food_collection').classList.remove('is-not-showing') + 
+  document.querySelector('.shopping_collection').classList.add('is-not-showing') +
+  document.querySelector('.entertainment_collection').classList.add('is-not-showing') +
+  document.querySelector('#location_li_shop').classList.remove('location_li_shop') + 
+  document.querySelector('#shopping_collection').classList.remove('shopping_collection_a') +
+  document.querySelector('#location_li_food').classList.add('location_li_food') + 
+  document.querySelector('#food_collection').classList.add('food_collection_a') +
+  document.querySelector('#location_li_entrtnmnt').classList.remove('location_li_entrtnmnt') + 
+  document.querySelector('#entertainment_collection').classList.remove('entertainment_collection_a')
 });
 
 document.querySelector('#entertainment_collection').addEventListener('click', () => {
-  document.querySelector('.entertainment_collection').classList.remove('is-not-showing') + document.querySelector('.shopping_collection').classList.add('is-not-showing') +
-  document.querySelector('.food_collection').classList.add('is-not-showing')
+  document.querySelector('.entertainment_collection').classList.remove('is-not-showing') + 
+  document.querySelector('.shopping_collection').classList.add('is-not-showing') +
+  document.querySelector('.food_collection').classList.add('is-not-showing') +
+  document.querySelector('#location_li_shop').classList.remove('location_li_shop') + 
+  document.querySelector('#shopping_collection').classList.remove('shopping_collection_a') +
+  document.querySelector('#location_li_food').classList.remove('location_li_food') + 
+  document.querySelector('#food_collection').classList.remove('food_collection_a') +
+  document.querySelector('#location_li_entrtnmnt').classList.add('location_li_entrtnmnt') + 
+  document.querySelector('#entertainment_collection').classList.add('entertainment_collection_a')
 });
-
 
 ///
 
