@@ -362,7 +362,11 @@ nav input[type="checkbox"] {
 }
 
 .store_collection {
-    margin: 3vh 0;
+    margin-bottom: 3vh;
+}
+
+.content_block_wrapper {
+    margin-bottom: 3vh;
 }
 
 .swiper2 {
@@ -826,11 +830,7 @@ form input, select {
     right: 75px;
 } */
 
-.second_floor {
-    display: none;
-}
-
-.ground_floor {
+.second_home, .ground_home, .second_shop, .ground_shop, .second_food, .ground_food, .second_entertainment, .ground_entertainment {
     display: none;
 }
 
