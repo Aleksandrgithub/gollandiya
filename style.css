@@ -389,11 +389,6 @@ nav input[type="checkbox"] {
     align-items: center;
 }
 
-.swiper_image {
-    width: 26vh;
-    height: 19.5vh;
-}
-
 .slide_text {
 	display: flex;
 	align-items: flex-start;
@@ -839,6 +834,23 @@ form input, select {
     display: none;
 }
 
+.shopping_collection {
+    display: none;
+}
+
+.food_collection {
+    display: none;
+}
+
+.swiper_image {
+    width: 26vh;
+    height: 19.5vh;
+}
+
+.entertainment_collection {
+    display: none;
+}
+
 .is-showing {   
     display: block;
 }
@@ -874,7 +886,6 @@ form input, select {
 .entertainment_collection_a {
     color:#fff;
 }
-
 
 footer {
     max-width: 500px;
@@ -948,6 +959,69 @@ h4 {
 .footer_down {
     margin: 0 auto;
     max-width: 500px;
+}
+
+/* */
+
+.checkbox-btn-group {
+	display: flex;
+    justify-content: space-between;
+    height: 45px;
+    margin-bottom: 20px;
+}
+.checkbox-btn-group input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-btn-group span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 30px;
+	border: 1px solid #999;
+	border-right: none;
+	transition: background 0.2s ease;
+}
+.checkbox-btn-group label:first-child span {
+	border-radius: 4px 0 0 4px;
+}
+.checkbox-btn-group label:last-child span {
+	border-radius: 0 4px 4px 0;
+	border-right: 1px solid #999;
+}
+ 
+/* Checked */
+.checkbox-btn-group input[type=checkbox]:checked + span {
+	background: #ffe0a6;
+}
+
+/* Focus */
+.checkbox-btn-group .focused span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.checkbox-btn-group label:hover {
+	color: #666;
+}
+ 
+/* Active */
+.checkbox-btn-group input[type=checkbox]:active:not(:disabled) + span {
+	background: #d2c5ac;
+	color: #000;
+}
+ 
+/* Disabled */
+.checkbox-btn-group input[type=checkbox]:disabled + span {
+	background: #efefef;
+	color: #666;
+	cursor: default;
+}
+.checkbox-btn-group input[type=checkbox]:checked:disabled + span {
+	background: #f7efdc;
 }
 
 /* @media screen and (max-width: 640px) {

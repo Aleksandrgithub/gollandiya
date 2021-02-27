@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="swiper.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -31,9 +32,9 @@
             </label>
             <div class="menu_box">
                 <ul class="menu_content">
-                    <li><a class="menu_item" href="shopping.html">Шопинг</a></li>
-                    <li><a class="menu_item" href="food.html">Еда</a></li>
-                    <li><a class="menu_item" href="entertainment.html">Развлечения</a></li>
+                    <li><a class="menu_item" id="menu_shop" href="#content">Шопинг</a></li>
+                    <li><a class="menu_item" id="menu_food" href="#content">Еда</a></li>
+                    <li><a class="menu_item" id="menu_entertainment" href="#content">Развлечения</a></li>
                     <li><a class="menu_item" href="rent.html">Аренда</a></li>
                     <li><a class="menu_item" href="advertising.html">Реклама</a></li>
                     <li><a class="menu_item" href="contacts.html">Контакты</a></li>
@@ -139,21 +140,72 @@
         </section>
         <section id="content">
             <div class="content_block">
-                <div class="location_box" style="background-color: #f8f8f8; box-shadow: none;">
-                    <ul class="location">
-                        <li id="location_li_shop" style="width: 30%; border-radius: 30px; border: 3px solid #fcd003;"><a id="shopping_collection" >Шопинг</a></li>
-                        <li id="location_li_food" style="width: 20%; border-radius: 30px; border: 3px solid #ff1b00;"><a id="food_collection" >Еда</a></li>
-                        <li id="location_li_entrtnmnt" style="width: 43%; border-radius: 30px; border: 3px solid #76008f;"><a id="entertainment_collection">Развлечения</a></li>
-                    </ul>
+                <div class="checkbox-btn-group">
+                    <label style="width: 30%;">
+                        <input type="checkbox" id='shopping_collection'>
+                        <span style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 30px; border: 3px solid #fcd003;">Шопинг</span>
+                    </label>
+                    <label style="width: 20%;">
+                        <input type="checkbox" id='food_collection'>
+                        <span style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 30px; border: 3px solid #ff1b00;">Еда</span>
+                    </label>
+                    <label style="width: 43%;">
+                        <input type="checkbox" id="entertainment_collection">
+                        <span style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 30px; border: 3px solid #76008f;">Развлечения</span>
+                    </label>
                 </div>
-                <div class="location_box">
-                    <ul class="location">
-                        <li style="width: 25%;" id="first_floor_curr" class="floor_curr" ><a id="first_floor_button">1 Этаж</a></li>
-                        <li style="width: 25%;" id="second_floor_curr"><a id="second_floor_button">2 Этаж</a></li>
-                        <li style="width: 50%" id="ground_floor_curr"><a id="ground_floor_button">Цокольный этаж</a></li>
-                    </ul>
+                <div class="home_screen">
+                    <div class="location_box">
+                        <ul class="location">
+                            <li style="width: 25%;" id="first_floor_curr" class="floor_curr" ><a id="first_floor_button">1 Этаж</a></li>
+                            <li style="width: 25%;" id="second_floor_curr"><a id="second_floor_button">2 Этаж</a></li>
+                            <li style="width: 50%" id="ground_floor_curr"><a id="ground_floor_button">Цокольный этаж</a></li>
+                        </ul>
+                    </div>
+                    <div class="store_collection">
+                        <div class="swiper-container swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper2_slide">
+                                    <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                </div>
+                                <div class="swiper-slide swiper2_slide">
+                                    <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                </div>
+                                <div class="swiper-slide swiper2_slide">
+                                    <img src="img/bohoslide1.png" alt="" class="swiper_image">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="content_block_subtitle">Trendroom12</span>
+                        <p class="content_block_text">женская одежда</p>
+                        <div class="info_buttons">
+                            <span class="info_btn" style="border-color: #ffd200;">шопинг</span>
+                            <span class="info_btn">1 этаж</span>
+                        </div>
+                    </div>
+                    <img src="img/content1.png" alt="">
+                    <span class="content_block_subtitle">Еда3</span>
+                    <p class="content_block_text">еда</p>
+                    <div class="info_buttons">
+                        <span class="info_btn" style="border-color: #ffd200;">еда</span>
+                        <span class="info_btn">1 этаж</span>
+                    </div>
+                    <img src="img/content2.png" alt="">
+                    <span class="content_block_subtitle">Развлечения3</span>
+                    <p class="content_block_text">развлечения</p>
+                    <div class="info_buttons">
+                        <span class="info_btn" style="border-color: #ffd200;">развлечения</span>
+                        <span class="info_btn">2 этаж</span>
+                    </div> 
                 </div>
                 <div class="shopping_collection">
+                    <div class="location_box">
+                        <ul class="location">
+                            <li style="width: 25%;" id="first_floor_curr" class="floor_curr" ><a id="first_floor_button">1 Этаж</a></li>
+                            <li style="width: 25%;" id="second_floor_curr"><a id="second_floor_button">2 Этаж</a></li>
+                            <li style="width: 50%" id="ground_floor_curr"><a id="ground_floor_button">Цокольный этаж</a></li>
+                        </ul>
+                    </div>
                     <div class="first_floor one">
                         <div class="store_collection">
                             <div class="swiper-container swiper2">
@@ -308,7 +360,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="food_collection is-not-showing">
+                <div class="food_collection">
+                    <div class="location_box">
+                        <ul class="location">
+                            <li style="width: 25%;" id="first_floor_curr" class="floor_curr" ><a id="first_floor_button">1 Этаж</a></li>
+                            <li style="width: 25%;" id="second_floor_curr"><a id="second_floor_button">2 Этаж</a></li>
+                            <li style="width: 50%" id="ground_floor_curr"><a id="ground_floor_button">Цокольный этаж</a></li>
+                        </ul>
+                    </div>
                     <div class="first_floor two">
                         <div class="store_collection">
                             <div class="swiper-container swiper2">
@@ -463,7 +522,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="entertainment_collection is-not-showing">
+                <div class="entertainment_collection">
+                    <div class="location_box">
+                        <ul class="location">
+                            <li style="width: 25%;" id="first_floor_curr" class="floor_curr" ><a id="first_floor_button">1 Этаж</a></li>
+                            <li style="width: 25%;" id="second_floor_curr"><a id="second_floor_button">2 Этаж</a></li>
+                            <li style="width: 50%" id="ground_floor_curr"><a id="ground_floor_button">Цокольный этаж</a></li>
+                        </ul>
+                    </div>
                     <div class="first_floor three">
                         <div class="store_collection">
                             <div class="swiper-container swiper2">
@@ -685,7 +751,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
-    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 </body>
 
 </html>
