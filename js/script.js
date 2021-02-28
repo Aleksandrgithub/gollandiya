@@ -27,6 +27,7 @@ document.querySelector('#menu_shop').addEventListener('click', () => {
   document.querySelector('.home_screen').classList.add('is-not-showing');
   document.querySelector('.shopping_collection').classList.add('is-showing');
   document.getElementById("shopping_collection").checked = true;
+  swiper.update();
 })
 
 document.querySelector('#menu_food').addEventListener('click', () => {
