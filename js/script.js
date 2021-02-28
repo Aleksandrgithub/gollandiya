@@ -2,22 +2,22 @@ document.querySelector('#btn-1').addEventListener('change', () => {
     document.querySelector('main').classList.toggle('fix_scroll') + document.querySelector('footer').classList.toggle('fix_scroll');
 });
 
-$('#menu_rent').on('click', function () {
+document.querySelector('#menu_rent').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
 })
 
-$('#menu_advertising').on('click', function () {
+document.querySelector('#menu_advertising').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
 })
 
-$('#menu_contacts').on('click', function () {
+document.querySelector('#menu_contacts').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
 })
 
-$('#menu_shop').on('click', function () {
+document.querySelector('#menu_shop').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
   document.querySelector('.food_collection').classList.remove('is-showing');
@@ -29,7 +29,7 @@ $('#menu_shop').on('click', function () {
   document.getElementById("shopping_collection").checked = true;
 })
 
-$('#menu_food').on('click', function () {
+document.querySelector('#menu_food').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
   document.querySelector('.shopping_collection').classList.remove('is-showing');
@@ -41,7 +41,7 @@ $('#menu_food').on('click', function () {
   document.getElementById("food_collection").checked = true;
 })
 
-$('#menu_entertainment').on('click', function () {
+document.querySelector('#menu_entertainment').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
   document.querySelector('.shopping_collection').classList.remove('is-showing');
@@ -107,7 +107,34 @@ $('#entertainment_collection').on('click', function () {
   }
 })
 
+// function validateShop(){
+//   var remember = document.querySelector('#entertainment_collection');
+//   if (remember.checked){
+//       alert("checked") ;
+//   }else{
+//       alert("You didn't check it! Let me check it for you.")
+//   }
+// }
 
+// document.querySelector('#menu_advertising').addEventListener('click', () =>{
+//   var shop = document.querySelector('#entertainment_collection');
+//   var food = document.querySelector('#entertainment_collection');
+//   var entertainment = document.querySelector('#entertainment_collection');
+//   if ((food.checked) || (shop.checked) || (entertainment.checked)){
+//     document.querySelector('.home_screen').classList.add('is-not-showing');
+//   }else{
+//     document.querySelector('.home_screen').classList.remove('is-not-showing');
+//   }
+// }
+
+// function validateEntertainment(){
+//   var remember = document.querySelector('#entertainment_collection');
+//   if (remember.checked){
+//       alert("checked") ;
+//   }else{
+//       alert("You didn't check it! Let me check it for you.")
+//   }
+// }
 
  document.querySelector('#first_home_button').addEventListener('click', () => {
    document.querySelector('.first_home').classList.remove('is-not-showing') + document.querySelector('.ground_home').classList.remove('is-showing') +
@@ -127,10 +154,6 @@ $('#entertainment_collection').on('click', function () {
    document.querySelector('#second_home_curr').classList.remove('floor_curr') + document.querySelector('#ground_home_curr').classList.add('floor_curr')
 });
 
-
-
-
-
 document.querySelector('#first_shop_button').addEventListener('click', () => {
   document.querySelector('.first_shop').classList.remove('is-not-showing') + document.querySelector('.ground_shop').classList.remove('is-showing') +
   document.querySelector('.second_shop').classList.remove('is-showing') + document.querySelector('#first_shop_curr').classList.add('floor_curr') +
@@ -148,8 +171,6 @@ document.querySelector('#ground_shop_button').addEventListener('click', () => {
   document.querySelector('.first_shop').classList.add('is-not-showing') + document.querySelector('#first_shop_curr').classList.remove('floor_curr') +
   document.querySelector('#second_shop_curr').classList.remove('floor_curr') + document.querySelector('#ground_shop_curr').classList.add('floor_curr')
 });
-
-
 
 document.querySelector('#first_food_button').addEventListener('click', () => {
   document.querySelector('.first_food').classList.remove('is-not-showing') + document.querySelector('.ground_food').classList.remove('is-showing') +
