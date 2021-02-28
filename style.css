@@ -992,12 +992,22 @@ h4 {
 	border-radius: 0 4px 4px 0;
 	border-right: 1px solid #999;
 }
- 
+
 /* Checked */
-.checkbox-btn-group input[type=checkbox]:checked + span {
-	background: #ffe0a6;
+.checkbox-btn-group input[type=checkbox]:checked + .shop_span {
+	background: #fcd003;
+    color: #fff;
 }
 
+.checkbox-btn-group input[type=checkbox]:checked + .food_span {
+	background: #ff1b00;
+    color: #fff;
+}
+
+.checkbox-btn-group input[type=checkbox]:checked + .entert_span {
+	background: #76008f;
+    color: #fff;
+}
 /* Focus */
 .checkbox-btn-group .focused span {
 	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);

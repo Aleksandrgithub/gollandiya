@@ -20,6 +20,10 @@ $('#menu_contacts').on('click', function () {
 $('#menu_shop').on('click', function () {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("food_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
   document.querySelector('.home_screen').classList.add('is-not-showing');
   document.querySelector('.shopping_collection').classList.add('is-showing');
   document.getElementById("shopping_collection").checked = true;
@@ -28,6 +32,10 @@ $('#menu_shop').on('click', function () {
 $('#menu_food').on('click', function () {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
   document.querySelector('.home_screen').classList.add('is-not-showing');
   document.querySelector('.food_collection').classList.add('is-showing');
   document.getElementById("food_collection").checked = true;
@@ -36,6 +44,10 @@ $('#menu_food').on('click', function () {
 $('#menu_entertainment').on('click', function () {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
+  document.getElementById("food_collection").checked = false;
   document.querySelector('.home_screen').classList.add('is-not-showing');
   document.querySelector('.entertainment_collection').classList.add('is-showing');
   document.getElementById("entertainment_collection").checked = true;
