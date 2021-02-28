@@ -83,127 +83,88 @@ document.querySelector('#entertainment_collection').addEventListener('change', (
   document.getElementById("shopping_collection").checked = false;
 })
 
-$('#food_collection').on('click', function () {
-  if (($('#food_collection').is(':checked')) || ($('#shopping_collection').is(':checked')) || ($('#entertainment_collection').is(':checked')) ) {
-    document.querySelector('.home_screen').classList.add('is-not-showing');
-  } else {
-    document.querySelector('.home_screen').classList.remove('is-not-showing');
-  }
-})
 
-$('#shopping_collection').on('click', function () {
-  if (($('#food_collection').is(':checked')) || ($('#shopping_collection').is(':checked')) || ($('#entertainment_collection').is(':checked')) ) {
-    document.querySelector('.home_screen').classList.add('is-not-showing');
-  } else {
-    document.querySelector('.home_screen').classList.remove('is-not-showing');
-  }
-})
+// этажи
 
-$('#entertainment_collection').on('click', function () {
-  if (($('#food_collection').is(':checked')) || ($('#shopping_collection').is(':checked')) || ($('#entertainment_collection').is(':checked')) ) {
-    document.querySelector('.home_screen').classList.add('is-not-showing');
-  } else {
-    document.querySelector('.home_screen').classList.remove('is-not-showing');
-  }
-})
-
-// function validateShop(){
-//   var remember = document.querySelector('#entertainment_collection');
-//   if (remember.checked){
-//       alert("checked") ;
-//   }else{
-//       alert("You didn't check it! Let me check it for you.")
-//   }
-// }
-
-// document.querySelector('#menu_advertising').addEventListener('click', () =>{
-//   var shop = document.querySelector('#entertainment_collection');
-//   var food = document.querySelector('#entertainment_collection');
-//   var entertainment = document.querySelector('#entertainment_collection');
-//   if ((food.checked) || (shop.checked) || (entertainment.checked)){
-//     document.querySelector('.home_screen').classList.add('is-not-showing');
-//   }else{
-//     document.querySelector('.home_screen').classList.remove('is-not-showing');
-//   }
-// }
-
-// function validateEntertainment(){
-//   var remember = document.querySelector('#entertainment_collection');
-//   if (remember.checked){
-//       alert("checked") ;
-//   }else{
-//       alert("You didn't check it! Let me check it for you.")
-//   }
-// }
-
- document.querySelector('#first_home_button').addEventListener('click', () => {
-   document.querySelector('.first_home').classList.remove('is-not-showing') + document.querySelector('.ground_home').classList.remove('is-showing') +
-   document.querySelector('.second_home').classList.remove('is-showing') + document.querySelector('#first_home_curr').classList.add('floor_curr') +
-   document.querySelector('#second_home_curr').classList.remove('floor_curr') + document.querySelector('#ground_home_curr').classList.remove('floor_curr')
- });
-
- document.querySelector('#second_home_button').addEventListener('click', () => {
-   document.querySelector('.second_home').classList.add('is-showing') + document.querySelector('.ground_home').classList.remove('is-showing') +
-   document.querySelector('.first_home').classList.add('is-not-showing') + document.querySelector('#first_home_curr').classList.remove('floor_curr') +
-   document.querySelector('#second_home_curr').classList.add('floor_curr') + document.querySelector('#ground_home_curr').classList.remove('floor_curr')
+document.querySelector('#first_home_button').addEventListener('click', () => {
+  document.querySelector('.first_home').classList.remove('is-not-showing') + document.querySelector('.ground_home').classList.remove('is-showing') +
+  document.querySelector('.second_home').classList.remove('is-showing') + document.querySelector('#first_home_curr').classList.add('floor_curr') +
+  document.querySelector('#second_home_curr').classList.remove('floor_curr') + document.querySelector('#ground_home_curr').classList.remove('floor_curr')
 });
 
- document.querySelector('#ground_home_button').addEventListener('click', () => {
-   document.querySelector('.ground_home').classList.add('is-showing') + document.querySelector('.second_home').classList.remove('is-showing') +
-   document.querySelector('.first_home').classList.add('is-not-showing') + document.querySelector('#first_home_curr').classList.remove('floor_curr') +
-   document.querySelector('#second_home_curr').classList.remove('floor_curr') + document.querySelector('#ground_home_curr').classList.add('floor_curr')
+document.querySelector('#second_home_button').addEventListener('click', () => {
+  document.querySelector('.second_home').classList.add('is-showing') + document.querySelector('.ground_home').classList.remove('is-showing') +
+  document.querySelector('.first_home').classList.add('is-not-showing') + document.querySelector('#first_home_curr').classList.remove('floor_curr') +
+  document.querySelector('#second_home_curr').classList.add('floor_curr') + document.querySelector('#ground_home_curr').classList.remove('floor_curr')
+});
+
+document.querySelector('#ground_home_button').addEventListener('click', () => {
+  document.querySelector('.ground_home').classList.add('is-showing') + document.querySelector('.second_home').classList.remove('is-showing') +
+  document.querySelector('.first_home').classList.add('is-not-showing') + document.querySelector('#first_home_curr').classList.remove('floor_curr') +
+  document.querySelector('#second_home_curr').classList.remove('floor_curr') + document.querySelector('#ground_home_curr').classList.add('floor_curr')
 });
 
 document.querySelector('#first_shop_button').addEventListener('click', () => {
-  document.querySelector('.first_shop').classList.remove('is-not-showing') + document.querySelector('.ground_shop').classList.remove('is-showing') +
-  document.querySelector('.second_shop').classList.remove('is-showing') + document.querySelector('#first_shop_curr').classList.add('floor_curr') +
-  document.querySelector('#second_shop_curr').classList.remove('floor_curr') + document.querySelector('#ground_shop_curr').classList.remove('floor_curr')
+ document.querySelector('.first_shop').classList.remove('is-not-showing') + document.querySelector('.ground_shop').classList.remove('is-showing') +
+ document.querySelector('.second_shop').classList.remove('is-showing') + document.querySelector('#first_shop_curr').classList.add('floor_curr') +
+ document.querySelector('#second_shop_curr').classList.remove('floor_curr') + document.querySelector('#ground_shop_curr').classList.remove('floor_curr')
 });
 
 document.querySelector('#second_shop_button').addEventListener('click', () => {
-  document.querySelector('.second_shop').classList.add('is-showing') + document.querySelector('.ground_shop').classList.remove('is-showing') +
-  document.querySelector('.first_shop').classList.add('is-not-showing') + document.querySelector('#first_shop_curr').classList.remove('floor_curr') +
-  document.querySelector('#second_shop_curr').classList.add('floor_curr') + document.querySelector('#ground_shop_curr').classList.remove('floor_curr')
+ document.querySelector('.second_shop').classList.add('is-showing') + document.querySelector('.ground_shop').classList.remove('is-showing') +
+ document.querySelector('.first_shop').classList.add('is-not-showing') + document.querySelector('#first_shop_curr').classList.remove('floor_curr') +
+ document.querySelector('#second_shop_curr').classList.add('floor_curr') + document.querySelector('#ground_shop_curr').classList.remove('floor_curr')
 });
 
 document.querySelector('#ground_shop_button').addEventListener('click', () => {
-  document.querySelector('.ground_shop').classList.add('is-showing') + document.querySelector('.second_shop').classList.remove('is-showing') +
-  document.querySelector('.first_shop').classList.add('is-not-showing') + document.querySelector('#first_shop_curr').classList.remove('floor_curr') +
-  document.querySelector('#second_shop_curr').classList.remove('floor_curr') + document.querySelector('#ground_shop_curr').classList.add('floor_curr')
+ document.querySelector('.ground_shop').classList.add('is-showing') + document.querySelector('.second_shop').classList.remove('is-showing') +
+ document.querySelector('.first_shop').classList.add('is-not-showing') + document.querySelector('#first_shop_curr').classList.remove('floor_curr') +
+ document.querySelector('#second_shop_curr').classList.remove('floor_curr') + document.querySelector('#ground_shop_curr').classList.add('floor_curr')
 });
 
 document.querySelector('#first_food_button').addEventListener('click', () => {
-  document.querySelector('.first_food').classList.remove('is-not-showing') + document.querySelector('.ground_food').classList.remove('is-showing') +
-  document.querySelector('.second_food').classList.remove('is-showing') + document.querySelector('#first_food_curr').classList.add('floor_curr') +
-  document.querySelector('#second_food_curr').classList.remove('floor_curr') + document.querySelector('#ground_food_curr').classList.remove('floor_curr')
+ document.querySelector('.first_food').classList.remove('is-not-showing') + document.querySelector('.ground_food').classList.remove('is-showing') +
+ document.querySelector('.second_food').classList.remove('is-showing') + document.querySelector('#first_food_curr').classList.add('floor_curr') +
+ document.querySelector('#second_food_curr').classList.remove('floor_curr') + document.querySelector('#ground_food_curr').classList.remove('floor_curr')
 });
 
 document.querySelector('#second_food_button').addEventListener('click', () => {
-  document.querySelector('.second_food').classList.add('is-showing') + document.querySelector('.ground_food').classList.remove('is-showing') +
-  document.querySelector('.first_food').classList.add('is-not-showing') + document.querySelector('#first_food_curr').classList.remove('floor_curr') +
-  document.querySelector('#second_food_curr').classList.add('floor_curr') + document.querySelector('#ground_food_curr').classList.remove('floor_curr')
+ document.querySelector('.second_food').classList.add('is-showing') + document.querySelector('.ground_food').classList.remove('is-showing') +
+ document.querySelector('.first_food').classList.add('is-not-showing') + document.querySelector('#first_food_curr').classList.remove('floor_curr') +
+ document.querySelector('#second_food_curr').classList.add('floor_curr') + document.querySelector('#ground_food_curr').classList.remove('floor_curr')
 });
 
 document.querySelector('#ground_food_button').addEventListener('click', () => {
-  document.querySelector('.ground_food').classList.add('is-showing') + document.querySelector('.second_food').classList.remove('is-showing') +
-  document.querySelector('.first_food').classList.add('is-not-showing') + document.querySelector('#first_food_curr').classList.remove('floor_curr') +
-  document.querySelector('#second_food_curr').classList.remove('floor_curr') + document.querySelector('#ground_food_curr').classList.add('floor_curr')
+ document.querySelector('.ground_food').classList.add('is-showing') + document.querySelector('.second_food').classList.remove('is-showing') +
+ document.querySelector('.first_food').classList.add('is-not-showing') + document.querySelector('#first_food_curr').classList.remove('floor_curr') +
+ document.querySelector('#second_food_curr').classList.remove('floor_curr') + document.querySelector('#ground_food_curr').classList.add('floor_curr')
 });
 
 document.querySelector('#first_entertainment_button').addEventListener('click', () => {
-  document.querySelector('.first_entertainment').classList.remove('is-not-showing') + document.querySelector('.ground_entertainment').classList.remove('is-showing') +
-  document.querySelector('.second_entertainment').classList.remove('is-showing') + document.querySelector('#first_entertainment_curr').classList.add('floor_curr') +
-  document.querySelector('#second_entertainment_curr').classList.remove('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.remove('floor_curr')
+ document.querySelector('.first_entertainment').classList.remove('is-not-showing') + document.querySelector('.ground_entertainment').classList.remove('is-showing') +
+ document.querySelector('.second_entertainment').classList.remove('is-showing') + document.querySelector('#first_entertainment_curr').classList.add('floor_curr') +
+ document.querySelector('#second_entertainment_curr').classList.remove('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.remove('floor_curr')
 });
 
 document.querySelector('#second_entertainment_button').addEventListener('click', () => {
-  document.querySelector('.second_entertainment').classList.add('is-showing') + document.querySelector('.ground_entertainment').classList.remove('is-showing') +
-  document.querySelector('.first_entertainment').classList.add('is-not-showing') + document.querySelector('#first_entertainment_curr').classList.remove('floor_curr') +
-  document.querySelector('#second_entertainment_curr').classList.add('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.remove('floor_curr')
+ document.querySelector('.second_entertainment').classList.add('is-showing') + document.querySelector('.ground_entertainment').classList.remove('is-showing') +
+ document.querySelector('.first_entertainment').classList.add('is-not-showing') + document.querySelector('#first_entertainment_curr').classList.remove('floor_curr') +
+ document.querySelector('#second_entertainment_curr').classList.add('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.remove('floor_curr')
 });
 
 document.querySelector('#ground_entertainment_button').addEventListener('click', () => {
-  document.querySelector('.ground_entertainment').classList.add('is-showing') + document.querySelector('.second_entertainment').classList.remove('is-showing') +
-  document.querySelector('.first_entertainment').classList.add('is-not-showing') + document.querySelector('#first_entertainment_curr').classList.remove('floor_curr') +
-  document.querySelector('#second_entertainment_curr').classList.remove('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.add('floor_curr')
+ document.querySelector('.ground_entertainment').classList.add('is-showing') + document.querySelector('.second_entertainment').classList.remove('is-showing') +
+ document.querySelector('.first_entertainment').classList.add('is-not-showing') + document.querySelector('#first_entertainment_curr').classList.remove('floor_curr') +
+ document.querySelector('#second_entertainment_curr').classList.remove('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.add('floor_curr')
 });
+
+function validate(){
+  var shop = document.querySelector('#shopping_collection');
+  var food = document.querySelector('#food_collection');
+  var entertainment = document.querySelector('#entertainment_collection');
+  if ((food.checked) || (shop.checked) || (entertainment.checked)){
+    document.querySelector('.home_screen').classList.add('is-not-showing');
+  }else{
+    document.querySelector('.home_screen').classList.remove('is-not-showing');
+  }
+}
