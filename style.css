@@ -903,6 +903,21 @@ h4 {
     padding-bottom: 10px;
 }
 
+.content_block_title_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_block_title_wrapper a {
+    text-decoration: underline;
+    color: black;
+}
+
+.content_block_title_wrapper a svg {
+    height: 20px;
+}
+
 .footer_social {
     display: flex;
     justify-content: space-between;
