@@ -814,21 +814,25 @@ form input, select {
     margin-bottom: 2vh;
 }
 
-/* .back-to-top, .back-to-main
+.back-to-top, .back-to-main
 {
     position: fixed;
-    right: 30px;
-    bottom: 64px;
-    width: 35px;
-    height: 35px;
+    right: 20px;
+    bottom: 30px;
+    width: 38px;
+    height: 38px;
     background-color: #0378db;
     z-index: 1;
     border-radius: 50%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-to-main {
     right: 75px;
-} */
+}
 
 .second_home, .ground_home, .second_shop, .ground_shop, .second_food, .ground_food, .second_entertainment, .ground_entertainment {
     display: none;

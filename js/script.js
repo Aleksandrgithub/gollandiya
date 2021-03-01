@@ -1,3 +1,21 @@
+window.onscroll = function () {
+  var scrollElem = document.querySelector('.back-to-top')
+  if(document.body.scrollTop > document.documentElement.clientHeight) {
+    scrollElem.style.opacity = "0"
+  } else {
+    scrollElem.style.opacity = "1"
+  };
+}
+var timeOut;
+function goUp() {
+    var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    if(top>0) {
+      window.scrollBy(0, -2000);
+      timeOut = setTimeout('goUp()', 1000);
+
+    } else clearTimeout(timeOut);
+}
+
 document.querySelector('#btn-1').addEventListener('change', () => {
     document.querySelector('main').classList.toggle('fix_scroll') + document.querySelector('footer').classList.toggle('fix_scroll');
 });
@@ -27,7 +45,6 @@ document.querySelector('#menu_shop').addEventListener('click', () => {
   document.querySelector('.home_screen').classList.add('is-not-showing');
   document.querySelector('.shopping_collection').classList.add('is-showing');
   document.getElementById("shopping_collection").checked = true;
-  swiper.update();
 })
 
 document.querySelector('#menu_food').addEventListener('click', () => {
@@ -169,3 +186,4 @@ function validate(){
     document.querySelector('.home_screen').classList.remove('is-not-showing');
   }
 }
+
