@@ -77,6 +77,19 @@ document.querySelector('#to_ad').addEventListener('click', () => {
   document.getElementById("shopping_collection").checked = false;
 })
 
+var btns = document.querySelectorAll('#map')
+btns.forEach(function(btn) {
+  btn.addEventListener('click', () => {
+    document.querySelector('.food_collection').classList.remove('is-showing');
+    document.querySelector('.entertainment_collection').classList.remove('is-showing');
+    document.getElementById("food_collection").checked = false;
+    document.getElementById("entertainment_collection").checked = false;
+    document.querySelector('.home_screen').classList.remove('is-not-showing');
+    document.querySelector('.shopping_collection').classList.remove('is-showing');
+    document.getElementById("shopping_collection").checked = false;
+  })
+})
+
 document.querySelector('#menu_shop').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
