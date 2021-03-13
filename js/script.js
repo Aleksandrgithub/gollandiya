@@ -1,19 +1,20 @@
+const scrollElem = document.querySelector('.back-to-top')
+const backHomeElem = document.querySelector('.back-to-home')
+
 window.onscroll = function () {
-  var scrollElem = document.querySelector('.back-to-top')
-  if(document.body.scrollTop > document.documentElement.clientHeight) {
+  if(window.pageYOffset < 300 ) {
     scrollElem.style.opacity = "0"
+    backHomeElem.style.right = "20px"
   } else {
-    scrollElem.style.opacity = "1"
+    scrollElem.style.opacity = "0.8"
+    backHomeElem.style.right = "75px"
   };
 }
-var timeOut;
-function goUp() {
-    var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-    if(top>0) {
-      window.scrollBy(0, -2000);
-      timeOut = setTimeout('goUp()', 1000);
 
-    } else clearTimeout(timeOut);
+scrollElem.addEventListener("click", backToTop);
+
+function backToTop() {
+  window.scrollTo(0, 0);
 }
 
 document.querySelector('#btn-1').addEventListener('change', () => {
@@ -23,16 +24,57 @@ document.querySelector('#btn-1').addEventListener('change', () => {
 document.querySelector('#menu_rent').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("food_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
+  document.querySelector('.home_screen').classList.remove('is-not-showing');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
 })
 
 document.querySelector('#menu_advertising').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("food_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
+  document.querySelector('.home_screen').classList.remove('is-not-showing');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
 })
 
 document.querySelector('#menu_contacts').addEventListener('click', () => {
   document.getElementById("btn-1").checked = false;
   document.querySelector('main').classList.remove('fix_scroll') + document.querySelector('footer').classList.remove('fix_scroll');
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("food_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
+  document.querySelector('.home_screen').classList.remove('is-not-showing');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
+})
+
+document.querySelector('#to_rent').addEventListener('click', () => {
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("food_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
+  document.querySelector('.home_screen').classList.remove('is-not-showing');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
+})
+
+document.querySelector('#to_ad').addEventListener('click', () => {
+  document.querySelector('.food_collection').classList.remove('is-showing');
+  document.querySelector('.entertainment_collection').classList.remove('is-showing');
+  document.getElementById("food_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
+  document.querySelector('.home_screen').classList.remove('is-not-showing');
+  document.querySelector('.shopping_collection').classList.remove('is-showing');
+  document.getElementById("shopping_collection").checked = false;
 })
 
 document.querySelector('#menu_shop').addEventListener('click', () => {

@@ -814,7 +814,7 @@ form input, select {
     margin-bottom: 2vh;
 }
 
-.back-to-top, .back-to-main
+.back-to-top, .back-to-home
 {
     position: fixed;
     right: 20px;
@@ -830,8 +830,8 @@ form input, select {
     justify-content: center;
 }
 
-.back-to-main {
-    right: 75px;
+.back-to-home {
+    opacity: 0.8;
 }
 
 .second_home, .ground_home, .second_shop, .ground_shop, .second_food, .ground_food, .second_entertainment, .ground_entertainment {
@@ -1030,11 +1030,6 @@ h4 {
 /* Focus */
 .checkbox-btn-group .focused span {
 	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
- 
-/* Hover */
-.checkbox-btn-group label:hover {
-	color: #666;
 }
  
 /* Active */
