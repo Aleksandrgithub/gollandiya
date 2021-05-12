@@ -104,7 +104,7 @@ form div label, input, select {
 
 
 
-header {
+.main_header  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,18 +116,30 @@ header {
     background-color: #ffffff;
 }
 
+.market_header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    height: 25vh;
+    background-color: #ffffff;
+}
+
 nav {
     margin-right: 30px;
 }
 
-h1 {
+.logo h1 {
     font-size: 40px;
     line-height: 1em;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
 }
 
-h2 {
+.logo h2 {
     font-size: 20px;
     text-align: start;
     font-family: 'Roboto', sans-serif;
@@ -432,7 +444,7 @@ nav input[type="checkbox"] {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 30px;;
+    padding: 20px 30px;
 }
 
 .ad_card {
@@ -834,7 +846,7 @@ form input, select {
     opacity: 0.8;
 }
 
-.second_home, .ground_home, .second_shop, .ground_shop, .second_food, .ground_food, .second_entertainment, .ground_entertainment {
+.second_home, .ground_home, .second_shop, .ground_shop, .second_food, .ground_food, .second_entertainment, .ground_entertainment, .second_map, .ground_map {
     display: none;
 }
 
@@ -1046,6 +1058,77 @@ h4 {
 }
 .checkbox-btn-group input[type=checkbox]:checked:disabled + span {
 	background: #f7efdc;
+}
+
+.map_curr {
+    border-radius: 30px; 
+    border: 2px solid #fff; 
+    background-color: #e4e8ec; 
+}
+
+.market_logo h1 {
+    font-family: Roboto;
+    color: #4b4b4b;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.market_logo h2 {
+    color: #959595;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.market_content {
+    padding: 26px;
+    background-color: #f8f8f8;
+}
+
+.strip {
+    width: 100%;
+    display: flex;
+    height: 3px;
+    margin-bottom: 5%;
+}
+
+.strip_elem_black {
+    width: 30%;
+    background-color: #000;
+    height: 100%;
+}
+
+.strip_elem {
+    width: 80%;
+    background-color: #d2d2d2;
+    opacity: 0.3;
+    height: 100%;
+}
+
+.market_title {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.description {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 7%;
+}
+
+.market_contact_block {
+    margin-bottom: 3%;
+}
+
+.market_contact_block p {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* @media screen and (max-width: 640px) {

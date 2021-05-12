@@ -146,6 +146,16 @@ document.querySelector('#food_collection').addEventListener('change', () => {
   document.getElementById("entertainment_collection").checked = false;
 })
 
+document.querySelector('#see_more').addEventListener('click', () => {
+  document.querySelector('.shopping_collection').classList.remove('is-not-showing') +
+  document.querySelector('.shopping_collection').classList.remove('is-showing') +
+  document.querySelector('.entertainment_collection').classList.remove('is-not-showing') +
+  document.querySelector('.entertainment_collection').classList.remove('is-showing') +
+  document.querySelector('.food_collection').classList.toggle('is-showing');
+  document.getElementById("shopping_collection").checked = false;
+  document.getElementById("entertainment_collection").checked = false;
+})
+
 document.querySelector('#entertainment_collection').addEventListener('change', () => {
   document.querySelector('.shopping_collection').classList.remove('is-not-showing') +
   document.querySelector('.shopping_collection').classList.remove('is-showing') +
@@ -230,6 +240,8 @@ document.querySelector('#ground_entertainment_button').addEventListener('click',
  document.querySelector('.first_entertainment').classList.add('is-not-showing') + document.querySelector('#first_entertainment_curr').classList.remove('floor_curr') +
  document.querySelector('#second_entertainment_curr').classList.remove('floor_curr') + document.querySelector('#ground_entertainment_curr').classList.add('floor_curr')
 });
+
+//карта
 
 function validate(){
   var shop = document.querySelector('#shopping_collection');

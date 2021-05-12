@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
 </head>
 <body>
-    <header style="background-color:#f8f8f8;">
+    <header class="main_header" style="background-color:#f8f8f8;">
         <div class="logo">
             <h1>Карта</h1>
         </div>
@@ -77,40 +82,77 @@
             <div class="floor_content_box">
                 <div class="location_box">
                     <ul class="location">
-                        <li style="width: 25%">1 Этаж</li>
-                        <li style="border-radius: 30px; border: 2px solid #fff; background-color: #e4e8ec; width: 25%;">2 Этаж</li>
-                        <li style="width: 50%">Цокольный этаж</li>
+                        <li style="width: 25%" id="first_map_curr" class="map_curr"><a id="first_map_button">1 Этаж</a></li>
+                        <li style="width: 25%;" id="second_map_curr"><a id="second_map_button">2 Этаж</a></li>
+                        <li style="width: 50%" id="ground_map_curr"><a id="ground_map_button">Цокольный этаж</a></li>
                     </ul>
                 </div>
-                <div class="holder">
-                    <input type="checkbox" class="show_more" id="show_more_shop" />
-                    <div class="limited">
-                        <img src="img/map2.png" alt="">
-                        <div class="limited_bottom"></div>
+                <div class="first_map">
+                    <div class="holder">
+                        <input type="checkbox" class="show_more" id="show_more_first" />
+                        <div class="limited">
+                            <img src="img/firstFloorMap.png" alt="" usemap="#Navigation">
+                                <div class="limited_bottom"></div>
+                        </div>
+                        <label for="show_more_first" class="show_more_button"></label>
                     </div>
-                    <label for="show_more_shop" class="show_more_button"></label>
+                    <div class="floor_content">
+                        <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
+                        <ul>
+                            <li><b>2 &#8226; Solara,</b> отдел женская одежда</li>
+                            <li><b>3 &#8226; ИП Егошина Т.В,</b> отдел бижутерии </li>
+                            <li><b>4 &#8226; ИП Жирова О.М,</b> чулочно-носочный отдел</li>
+                            <li><b>5 &#8226; Город и Мода,</b> отдел женской одежды</li>
+                            <li><b>6 &#8226; Подиум,</b> отдел женской одежды</li>
+                            <li><b>7 &#8226; Анютины Глазки,</b> отдел детской одежды и обуви</li>
+                            <li><b>8 &#8226; Body Shop,</b> отдел женской отдежды</li>
+                            <li><b>9 &#8226; Каролина,</b> отдел женской одежды</li>
+                        </ul>
+                    </div>
+                    <div class="floor_content">
+                        <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
+                        <ul>
+                            <li><b>1 Пирожковая Весёлый Голландец</b></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="floor_content">
-                    <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
-                    <ul>
-                        <li><b>Trendroom12,</b> женская одежда и обувь</li>
-                        <li><b>Major,</b> мужская одежда </li>
-                        <li><b>Boho,</b> женская одежда и обувь</li>
-                        <li><b>Moda Mix,</b> женская одежда и обувь</li>
-                        <li><b>Q'she1,</b> женская одежда и обувь</li>
-                        <li><b>Q'she2,</b> женская одежда и обувь</li>
-                        <li><b>Бродвей,</b> женская одежда и обувь</li>
-                        <li><b>ИП Кропотова А.А.,</b> женская одежда и обувь</li>
-                        <li><b>Шарм,</b> женская одежда и обувь</li>
-                        <li><b>TheROOM,</b> женская одежда и обувь</li>
-                        <li><b>Фифа,</b> женская одежда и обувь</li>
-                    </ul>
+                <div class="second_map">
+                    <div class="holder">
+                        <input type="checkbox" class="show_more" id="show_more_second" />
+                        <div class="limited">
+                            <img src="img/secondFloorMap.png" alt="">
+                            <div class="limited_bottom"></div>
+                        </div>
+                        <label for="show_more_second" class="show_more_button"></label>
+                    </div>
+                    <div class="floor_content">
+                        <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
+                        <ul>
+                            <li><b>1 &#8226; Фифа,</b> отдел женской одежды</li>
+                            <li><b>2 &#8226; Шарм,</b> отдел женской одежды </li>
+                            <li><b>3 &#8226; Major,</b> отдел мужской одежды</li>
+                            <li><b>4 &#8226; Комод,</b> отдел женской одежды и аксессуаров</li>
+                            <li><b>5 &#8226; Boho,</b> отдел женской дизайнерской одежды</li>
+                            <li><b>6 &#8226; Бродвей,</b> отдел обуви</li>
+                            <li><b>7 &#8226; Q'She,</b> отдел женской одежды</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="floor_content">
-                    <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
-                    <ul>
-                        <li><b>Пирожковая Весёлый Голландец</b></li>
-                    </ul>
+                <div class="ground_map">
+                    <div class="holder">
+                        <input type="checkbox" class="show_more" id="show_more_under" />
+                        <div class="limited">
+                            <img src="img/underFloorMap.png" alt="">
+                            <div class="limited_bottom"></div>
+                        </div>
+                        <label for="show_more_under" class="show_more_button"></label>
+                    </div>
+                    <div class="floor_content">
+                        <span class="floor_content_title" style="border: 3px solid #ffd200;">Шопинг</span>
+                    </div>
+                    <div class="floor_content">
+                        <span class="floor_content_title" style="border: 3px solid #ff1b00;">Еда</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,5 +205,6 @@
         <img src="img/footerDown.png" alt="">
     </div>
     <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
