@@ -123,8 +123,8 @@ form div label, input, select {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 30px;
-    height: 25vh;
+    padding: 0 30px;
+    height: 20vh;
     background-color: #ffffff;
 }
 
@@ -686,7 +686,7 @@ form input, select {
 }
 
 .floor_content ul li {
-    color: #5f6b7d;
+    color: #5f6b7d !important;
 }
 
 .floor_content ul li b {
@@ -1129,6 +1129,16 @@ h4 {
     font-family: Roboto;
     font-size: 12px;
     font-weight: 500;
+}
+
+.back_from_department {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+ul li a {
+    text-decoration: none;
+    color: #5f6b7d !important;
 }
 
 /* @media screen and (max-width: 640px) {
